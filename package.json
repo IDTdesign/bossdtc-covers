@@ -1,0 +1,17 @@
+{
+  "name": "bossdtc-covers",
+  "version": "0.0.1",
+  "description": "template for site cover",
+  "author": "Paul Radzkov <radzkov@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IDTdesign/bossdtc-covers.git"
+  },
+  "keywords": [
+  ],
+  "dependencies": {
+  },
+  "main": "",
+  "devDependencies": {
+  }
+}

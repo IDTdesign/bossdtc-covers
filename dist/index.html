@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="svg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bossrevolution.com covers</title>
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- production styles -->
+    <link rel="stylesheet" href="https://www.bossrevolution.com/Content/bootstrap.css">
+    <link rel="stylesheet" href="https://www.bossrevolution.com/Content/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://www.bossrevolution.com/Content/css/bossrevolution.css">
+    <link rel="stylesheet" href="https://www.bossrevolution.com/Content/css/bossrevolution_fix.css">
+    <!-- Fotorama -->
+    <link href="/Scripts/fotorama-4.6.4/fotorama.css" rel="stylesheet">
+    <link href="/Content/css/covers.css" rel="stylesheet">
+    <script src="/Scripts/fotorama-4.6.4/fotorama.js"></script>
+</head>
+<body>
+<style>
+/* limit width of the page. required by homepage hero slider */
+html {
+    max-width: 1710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .noticeIos{display: block; font-size: 10px; font-weight: normal; color: #666;}
+  .hero {
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .hero {
+      margin-top: 110px;
+    }
+  }
+  .hero-content {
+    width: 100vw;
+    max-width: 1710px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-image-cover {
+    display: block !important;
+    margin: 0 auto;
+    width: 100% !important ;
+    min-width: 100%;
+    max-width: 1710px !important;
+  }
+  @media (min-width: 1140px) and (max-width: 1710px) {
+    .hero-image-cover {
+      width: 1710px !important;
+      max-width: 1710px !important;
+      height: 570px !important;
+      margin-left: calc( (1710px - 100vw) / -2 );
+      margin-right: calc( (1710px - 100vw) / -2 );
+    }
+  }
+  .fotorama {
+    max-width: 1710px;
+  }
+  @media (max-width: 570px) {
+    .fotorama__stage {
+      height: 150vw !important;
+    }
+  }
+  .hero-textoverlay {
+    color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 60px 60px 60px;
+  }
+  @media (max-width:570px) {
+    .hero-textoverlay {
+      padding: 30px 15px 30px;
+      text-align: center;
+    }
+  }
+  @media (max-width:767px) {
+    .hero-textoverlay {
+      padding: 30px 30px 30px;
+    }
+  }
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  /* slide 1 */
+  .slide1-block1 {
+    margin: 0 0 auto;
+  }
+  .slide1-block2 {
+    margin: auto 0;
+  }
+  .slide1-block3 {
+    font-size: 10px;
+    max-width: 300px;
+    margin: auto 0 0;
+  }
+  @media (max-width:570px) {
+    .slide1-block1 {
+      margin: 0 auto auto;
+    }
+    .slide1-block2 {
+      margin: auto auto 16px;
+    }
+    .slide1-block3 {
+      margin: 0 auto 0;
+      max-width: none;
+    }
+  }
+  .hero-baloon:before {
+    content: " ";
+    position: absolute;
+    right: 5%;
+    top: 1000px;
+    width: 150px;
+    height: 280px;
+    /*width: 20%;
+    height: 60%;*/
+    background: url(/Content/img/download-app/v2/1Free_Eng.png) 50% 50% no-repeat;
+    background-size: 100%;
+    z-index: 10;
+    animation: flyUp 1.5s 5s forwards, balloon 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@media (max-width: 570px) {
+    .hero-baloon:before {
+        width: 25vw;
+        height: 50vw;
+        margin-top: 25vw;
+    }
+}
+
+.es-US .hero-baloon:before {
+    background-image: url(/Content/img/download-app/v2/1Free_Spa.png);
+}
+
+.en-HK .hero-baloon:before {
+    background-image: url(/Content/img/download-app/v2/1Free_hk-1x.png);
+}
+
+.en-ES .hero-baloon:before {
+    background-image: url(/Content/img/download-app/v2/1Free_es-en-1x.png);
+}
+
+.es-ES .hero-baloon:before {
+    background-image: url(/Content/img/download-app/v2/1Free_es-es-1x.png);
+}
+
+.en-GB .hero-baloon:before {
+    background-image: url(/Content/img/download-app/v2/1Free_en-en-1x.png);
+}
+
+.es-GB .hero-baloon:before {
+    background-image: url(/Content/img/download-app/v2/1Free_en-es-1x.png);
+}
+
+
+</style>
+<div class="hero">
+  <div class="hero fotorama"
+       data-fit="cover"
+       data-width="100%"
+       data-ratio="1140/570"
+       data-minwidth="320"
+       data-minheight="258"
+       data-maxheight="570"
+       data-nav="thumbs"
+       data-thumbwidth="128"
+       data-thumbheight="64"
+       data-trackpad="true"
+       data-keyboard="true"
+       data-click="false">
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-NewApp-eng-2-thumb.jpg">
+      <picture>
+        <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-NewApp-blank-eng-3.png">
+        <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-NewApp-blank-eng-2.png">
+        <img src="/Content/img/homepage-slider/hero-NewApp-blank-eng.png" class="hero-image-cover" />
+      </picture>
+      <div class="hero-textoverlay container flex-col">
+        <h2 class="hero-baloon slide1-block1">
+          <span class="frame0 brand-color">Talk. </span><span class="frame1 brand-color">Text. </span><br>
+          <span class="frame2 brand-color">Send. </span><span class="frame3 brand-color">Share. </span><br>
+          <span class="frame4">You got it all.</span>
+        </h2>
+        <div class="download--block frame5 slide1-block2">
+          <p class="visible-md visible-lg text-bold">
+            DOWNLOAD THE <span class="brand-color">NEW</span> BOSS REVOLUTION APP<br>
+            AND GET $1 FREE TO TRY IT<sup>*</sup>
+          </p>
+          <p class="visible-xs visible-sm text-bold">
+            DOWNLOAD THE <span class="brand-color">NEW</span> APP<br>
+          </p>
+          <p>
+            <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"><span class="sr-only">Download on the AppStore</span></a>
+            <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"><span class="sr-only">Get it on Google Play</span></a>
+          </p>
+          <span class="noticeIos">Free calling and messaging available on iPhone soon</span>
+        </div>
+        <p class="notice frame5 slide1-block3">*The $1 free promo is valid only for U.S. consumers who download and activate the App prior to 12/31/2016, and may only be used for the Boss Revolution calling service.</p>
+      </div>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-PinlessSweepstake-eng-2-thumb.jpg">
+      <a href="/en-us/brclub" >
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-eng-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-eng-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-PinlessSweepstake-eng.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>DECEMBER SWEEPSTAKES</h2>
+          <p>$4,000 Each Week</p>
+          <p>Weekly Sweepstakes: $500 (4 Prizes); $100 (20 Prizes)</p>
+          <p>Each BOSS Revolution pinless recharge is an automatic entry</p>
+          <p><strong>Learn more</strong>.</p>
+        </div>
+      </a>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-ChristmasPromo-eng-2-thumb.jpg">
+      <a href="/en-us/services/domestic-mobile-topup">
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-eng-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-eng-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-ChristmasPromo-eng.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>Merry Christmas!</h2>
+          <p>Recharge on Saturday, December 24th and get extra balance to call your country</p>
+          <p>Recharge 5$ and more and receive 10% extra.</p>
+          <p>BR Club Members receive 20% extra.</p>
+          <p><strong>Recharge now</strong>.</p>
+        </div>
+      </a>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-MTSweepstake-eng-2-thumb.jpg">
+      <a href="/en-us/services/money-transfer">
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-eng-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-eng-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-MTSweepstake-eng.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>HOLIDAY PROMOTION VALID DECEMBER 1 TO 31</h2>
+          <p>Send Money with BOSS Revolution And automatically participate in the sweepstakes</p>
+          <p>1st Prize - 50” Flat Screen TV</p>
+          <p>2nd Prize - $50 Gift Card</p>
+          <p>IF YOU WIN, THEY WIN $50!</p>
+          <p><strong>SEND MONEY NOW</strong>.</p>
+        </div>
+      </a>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-NewYearPromo-eng-2-thumb.jpg">
+      <a href="/en-us/brclub">
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-eng-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-eng-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-NewYearPromo-eng.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>Happy New Year!</h2>
+          <p>Recharge on Saturday, December 31st and get extra balance to call your country</p>
+          <p>Recharge 5$ and more and receive 10% extra.</p>
+          <p>BR Club Members receive 20% extra.</p>
+          <p><strong>Recharge now</strong>.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<link href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script type="text/javascript" src="//unpkg.com/picturefill@3.0.2/dist/picturefill.min.js"></script>
+<!--end of zone content-->
+
+<div class="hero">
+  <div class="hero fotorama"
+       data-fit="cover"
+       data-width="100%"
+       data-ratio="1140/570"
+       data-minwidth="320"
+       data-minheight="258"
+       data-maxheight="570"
+       data-nav="thumbs"
+       data-thumbwidth="128"
+       data-thumbheight="64"
+       data-trackpad="true"
+       data-keyboard="true"
+       data-click="false">
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-NewApp-spa-2-thumb.jpg">
+      <picture>
+        <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-NewApp-blank-spa-3.png">
+        <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-NewApp-blank-spa-2.png">
+        <img src="/Content/img/homepage-slider/hero-NewApp-blank-spa.png" class="hero-image-cover" />
+      </picture>
+      <div class="hero-textoverlay container flex-col">
+        <h2 class="hero-baloon slide1-block1">
+          <span class="frame0 brand-color">Habla. </span><span class="frame1 brand-color">Textea. </span><br>
+          <span class="frame2 brand-color">Envía. </span><span class="frame3 brand-color">Comparte. </span><br>
+          <span class="frame4">Lo tienes todo.</span>
+        </h2>
+        <div class="download--block frame5 slide1-block2">
+          <p class="visible-md visible-lg text-bold">
+            DESCARGA EL <span class="brand-color">NUEVO</span> APP DE BOSS REVOLUTION<br />
+            Y RECIBE $1 GRATIS PARA PROBARLO<sup>*</sup>
+          </p>
+          <p class="visible-xs visible-sm text-bold">
+            DESCARGA EL <span class="brand-color">NUEVO</span> APP<br>
+          </p>
+          <p>
+            <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"><span class="sr-only">Download on the AppStore</span></a>
+            <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"><span class="sr-only">Get it on Google Play</span></a>
+            <span class="noticeIos">Llamadas y mensajes gratis disponibles para iPhone próximamente</span>
+          </p>
+        </div>
+        <p class="notice frame5 slide1-block3">*Promoción del $1 gratis válida sólo para usuarios que viven en los Estados Unidos que descarguen y activen la aplicación móvil antes de 12/31/2016, y sólo pueden ser utilizados para el servicio de llamadas Pinless de Boss Revolution</p>
+      </div>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-PinlessSweepstake-spa-2-thumb.jpg">
+      <a href="/en-us/brclub" >
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-spa-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-spa-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-PinlessSweepstake-spa.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>CADA SEMANA EN DICIEMBRE</h2>
+          <p>Sorteamos $4,000</p>
+          <p>Sorteo semanal: de $500 (4 Premios); $100 (20 Premios)</p>
+          <p>Participa automáticamente con cada recarga de BOSS Revolution pinless</p>
+          <p><strong>Leer Más</strong>.</p>
+        </div>
+      </a>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-ChristmasPromo-spa-2-thumb.jpg">
+      <a href="/en-us/services/domestic-mobile-topup">
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-spa-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-spa-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-ChristmasPromo-spa.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>¡Feliz Navidad!</h2>
+          <p>Recarga el Sábado, 24 de Diciembre y obtén saldo extra para llamar a tu país.</p>
+          <p>RECARGA $5 o más - RECIBE 10% extra.</p>
+          <p>SÓLO PARA MIEMBROS DE BR CLUB RECIBE 20% extra.</p>
+          <p><strong>RECARGAR AHORA</strong>.</p>
+        </div>
+      </a>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-MTSweepstake-spa-2-thumb.jpg">
+      <a href="/en-us/services/money-transfer">
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-spa-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-spa-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-MTSweepstake-spa.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>PROMOCIÓN DE NAVIDAD VÁLIDA DEL 1 A 31 DE DICIEMBRE</h2>
+          <p>Envía Dinero con BOSS Revolution Y participa automáticamente
+en el sorteo</p>
+          <p>1er Premio - Un TV Pantalla Plana de 50”</p>
+          <p>2do Premio - $50 en Efectivo</p>
+          <p>SI TÚ GANAS, ELLOS GANAN $50</p>
+          <p><strong>Envía dinero ahora</strong>.</p>
+        </div>
+      </a>
+    </div>
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-NewYearPromo-spa-2-thumb.jpg">
+      <a href="/en-us/brclub">
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-spa-3.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-spa-2.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-NewYearPromo-spa.png" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>¡Feliz Año Nuevo!</h2>
+          <p>Recarga el Sábado, 31 de Diciembre y obtén saldo extra para llamar a tu país</p>
+          <p>RECARGA $5 o más - RECIBE 10% extra.</p>
+          <p>SÓLO PARA MIEMBROS DE BR CLUB RECIBE 20% extra.</p>
+          <p><strong>RECARGA AHORA</strong>.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<link href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script type="text/javascript" src="//unpkg.com/picturefill@3.0.2/dist/picturefill.min.js"></script>
+<!--end of zone content-->
+</body>
+</html>
