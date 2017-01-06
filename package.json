@@ -7,11 +7,12 @@
     "type": "git",
     "url": "https://github.com/IDTdesign/bossdtc-covers.git"
   },
-  "keywords": [
-  ],
-  "dependencies": {
-  },
+  "keywords": [],
+  "dependencies": {},
   "main": "",
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-resize-crop": "0.0.1",
+    "grunt-responsive-images": "^1.10.1"
   }
 }
