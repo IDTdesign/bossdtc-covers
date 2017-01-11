@@ -26,6 +26,13 @@ All part divided by underscore.
 
 [Image sizes Giude](http://take.ms/CoAom)
 
+lg 1710x570
+md 1140x570
+sm 570x855
+th 256×128
+
+
+
 ## Algorithm
 
 1. Prepare source files for export.

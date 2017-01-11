@@ -164,8 +164,30 @@ html {
 .es-GB .hero-baloon:before {
     background-image: url(/Content/img/download-app/v2/1Free_en-es-1x.png);
 }
+.notice {color: #666;}
 
-
+/*app-launch-slide*/
+.app-launch-color1 {color: #039d32; font-size: 60px;}
+.app-launch-color2 {color: #d81f26; font-size: 60px;}
+.hero .app-launch-color3 {color: #231f20; font-size: 16px; margin: 45px 0 20px 0;}
+@media (max-width:1100px) {
+  .app-launch-color1 {font-size: 50px;}
+  .app-launch-color2 {font-size: 50px;}  
+}
+@media (max-width:980px) {
+  .app-launch-color1 {font-size: 30px;}
+  .app-launch-color2 {font-size: 30px;}
+  .hero .app-launch-color3 {margin: 25px 0 20px 0;}
+}
+@media (max-width:570px) {
+  .app-launch-color1 {font-size: 26px;}
+  .app-launch-color2 {font-size: 26px;}
+  .app-launch-color2 br {display: none;}
+  .hero .app-launch-color3 {margin: 10px; font-size: 12px;}
+}
+@media (max-width:330px) {
+ .hero .app-launch-color3 {margin: 10px; font-size: 12px; padding: 10px; background: rgba(255,255,255,0.8); border-radius: 4px;} 
+}
 </style>
 
 
@@ -183,6 +205,19 @@ html {
        data-trackpad="true"
        data-keyboard="true"
        data-click="false">
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero_US-ENG_BR-Pinless_Spooky-Friday_thumb.jpg">
+      <a href="/en-us/br-club-offers" >
+        <picture>
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero_US-ENG_BR-Pinless_Spooky-Friday_sm.jpg">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero_US-ENG_BR-Pinless_Spooky-Friday_md.jpg">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero_US-ENG_BR-Pinless_Spooky-Friday_lg.jpg" alt="" />
+        </picture>
+        <div class="sr-only">
+          <h2>text</h2>        
+          <p>text</p>
+        </div>
+      </a>
+    </div>
     <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-NewApp-eng-2-thumb.jpg">
       <picture>
         <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-NewApp-blank-eng-3.png">
@@ -212,71 +247,50 @@ html {
         <p class="notice frame5 slide1-block3">*The $1 free promo is valid only for U.S. consumers who download and activate the App prior to 12/31/2016, and may only be used for the Boss Revolution calling service.</p>
       </div>
     </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-PinlessSweepstake-eng-2-thumb.jpg">
-      <a href="/en-us/brclub" >
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero_US-ENG_BRClub_thumb.png">
+      <a href="/en-us/br-club-offers" >
         <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-eng-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-eng-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-PinlessSweepstake-eng.png" alt="" />
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero_US-ENG_BRClub_sm.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero_US-ENG_BRClub_md.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero_US-ENG_BRClub_lg.png" alt="" />
         </picture>
         <div class="sr-only">
-          <h2>DECEMBER SWEEPSTAKES</h2>
-          <p>$4,000 Each Week</p>
-          <p>Weekly Sweepstakes: $500 (4 Prizes); $100 (20 Prizes)</p>
-          <p>Each BOSS Revolution pinless recharge is an automatic entry</p>
+          <h2>Join the BR Club</h2>        
+          <p>Join the BR Club and get SUPER DEALS!</p>
+          <p>+20% pinless promos</p>
           <p><strong>Learn more</strong>.</p>
         </div>
       </a>
     </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-ChristmasPromo-eng-2-thumb.jpg">
-      <a href="/en-us/services/domestic-mobile-topup">
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero_US-ENG_app-money-laun_thumb.jpg">
+      <a href="/en-us/services/money-transfer" >
         <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-eng-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-eng-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-ChristmasPromo-eng.png" alt="" />
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero_US-ENG_app-money-laun_sm.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero_US-ENG_app-money-laun_md.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero_US-ENG_app-money-laun_lg.png" alt="" />
         </picture>
-        <div class="sr-only">
-          <h2>Merry Christmas!</h2>
-          <p>Recharge on Saturday, December 24th and get extra balance to call your country</p>
-          <p>Recharge 5$ and more and receive 10% extra.</p>
-          <p>BR Club Members receive 20% extra.</p>
-          <p><strong>Recharge now</strong>.</p>
+        <div class="hero-textoverlay container flex-col">
+        <h2 class="app-launch-color1 slide1-block1">
+          <span class="app-launch-color2">Introducing <br>the New</span><br>
+          BOSS Revolution<br>
+          Money App
+        </h2>
+        <div class="download--block slide1-block2">
+          <p class="text-bold app-launch-color3">
+            DOWNLOAD NOW AND YOUR FIRST<br>
+            TRANSFER WITH THE APP IS <span class="brand-color">FREE</span><br>
+            WITH CODE <span class="brand-color">MONEY</span> (UP TO $300) <br>
+          </p>          
+          <p>            
+            <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=kobr-money-iphone-yk3x4vqds53f8d2df85bb1&network_id=1038&device_id=device_id&site_id=1"><span class="sr-only">Download on the AppStore</span></a>
+            <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=kobr-money-ubp84xcb49c342fcabe&network_id=1038&device_id=device_id&site_id=1&append_app_conv_trk_params=1"><span class="sr-only">Get it on Google Play</span></a>
+          </p>          
         </div>
+        <p class="notice slide1-block3">*Offer expires 2/15/17. Available only where IDT Payment Services is licensed.</p>
+      </div>       
       </a>
     </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-MTSweepstake-eng-2-thumb.jpg">
-      <a href="/en-us/services/money-transfer">
-        <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-eng-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-eng-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-MTSweepstake-eng.png" alt="" />
-        </picture>
-        <div class="sr-only">
-          <h2>HOLIDAY PROMOTION VALID DECEMBER 1 TO 31</h2>
-          <p>Send Money with BOSS Revolution And automatically participate in the sweepstakes</p>
-          <p>1st Prize - 50” Flat Screen TV</p>
-          <p>2nd Prize - $50 Gift Card</p>
-          <p>IF YOU WIN, THEY WIN $50!</p>
-          <p><strong>SEND MONEY NOW</strong>.</p>
-        </div>
-      </a>
-    </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-NewYearPromo-eng-2-thumb.jpg">
-      <a href="/en-us/brclub">
-        <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-eng-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-eng-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-NewYearPromo-eng.png" alt="" />
-        </picture>
-        <div class="sr-only">
-          <h2>Happy New Year!</h2>
-          <p>Recharge on Saturday, December 31st and get extra balance to call your country</p>
-          <p>Recharge 5$ and more and receive 10% extra.</p>
-          <p>BR Club Members receive 20% extra.</p>
-          <p><strong>Recharge now</strong>.</p>
-        </div>
-      </a>
-    </div>
+    
   </div>
 </div>
 
@@ -325,73 +339,48 @@ html {
         <p class="notice frame5 slide1-block3">*Promoción del $1 gratis válida sólo para usuarios que viven en los Estados Unidos que descarguen y activen la aplicación móvil antes de 12/31/2016, y sólo pueden ser utilizados para el servicio de llamadas Pinless de Boss Revolution</p>
       </div>
     </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-PinlessSweepstake-spa-2-thumb.jpg">
-      <a href="/en-us/brclub" >
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero_US-SPA_BRClub_thumb.png">
+      <a href="/en-us/br-club-offers" >
         <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-spa-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-PinlessSweepstake-spa-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-PinlessSweepstake-spa.png" alt="" />
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero_US-SPA_BRClub_sm.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero_US-SPA_BRClub_md.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero_US-SPA_BRClub_lg.png" alt="" />
         </picture>
         <div class="sr-only">
-          <h2>CADA SEMANA EN DICIEMBRE</h2>
-          <p>Sorteamos $4,000</p>
-          <p>Sorteo semanal: de $500 (4 Premios); $100 (20 Premios)</p>
-          <p>Participa automáticamente con cada recarga de BOSS Revolution pinless</p>
-          <p><strong>Leer Más</strong>.</p>
+          <h2>Únete al BR Club</h2>        
+          <p>Únete al BR Club y obtén ¡SÚPER OFERTAS!</p>          
+          <p><strong>Únete hoy</strong>.</p>
         </div>
       </a>
     </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-ChristmasPromo-spa-2-thumb.jpg">
-      <a href="/en-us/services/domestic-mobile-topup">
+    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero_US-SPA_app-money-laun_thumb.jpg">
+      <a href="/en-us/services/money-transfer" >
         <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-spa-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-ChristmasPromo-spa-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-ChristmasPromo-spa.png" alt="" />
+          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero_US-ENG_app-money-laun_sm.png">
+          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero_US-ENG_app-money-laun_md.png">
+          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero_US-ENG_app-money-laun_lg.png" alt="" />
         </picture>
-        <div class="sr-only">
-          <h2>¡Feliz Navidad!</h2>
-          <p>Recarga el Sábado, 24 de Diciembre y obtén saldo extra para llamar a tu país.</p>
-          <p>RECARGA $5 o más - RECIBE 10% extra.</p>
-          <p>SÓLO PARA MIEMBROS DE BR CLUB RECIBE 20% extra.</p>
-          <p><strong>RECARGAR AHORA</strong>.</p>
+        <div class="hero-textoverlay container flex-col">
+        <h2 class="app-launch-color1 slide1-block1">
+          <span class="app-launch-color2">Presentamos <br>el Nuevo</span><br>
+          BOSS Revolution<br>
+          Money App
+        </h2>
+        <div class="download--block slide1-block2">
+          <p class="text-bold app-launch-color3">
+            DESCARGA AHORA Y TU PRIMER <br>
+            ENVÍO CON EL APP ES <span class="brand-color">GRATIS</span><br>
+            CON CÓDIGO <span class="brand-color">MONEY </span> (HASTA $300) <br>
+          </p>          
+          <p>
+            <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"><span class="sr-only">Download on the AppStore</span></a>
+            <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"><span class="sr-only">Get it on Google Play</span></a>
+          </p>          
         </div>
+        <p class="notice slide1-block3">Oferta vence 2/15/17. Disponible solo donde IDT Payment Services tiene licencia.</p>
+      </div>       
       </a>
     </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-MTSweepstake-spa-2-thumb.jpg">
-      <a href="/en-us/services/money-transfer">
-        <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-spa-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-MTSweepstake-spa-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-MTSweepstake-spa.png" alt="" />
-        </picture>
-        <div class="sr-only">
-          <h2>PROMOCIÓN DE NAVIDAD VÁLIDA DEL 1 A 31 DE DICIEMBRE</h2>
-          <p>Envía Dinero con BOSS Revolution Y participa automáticamente
-en el sorteo</p>
-          <p>1er Premio - Un TV Pantalla Plana de 50”</p>
-          <p>2do Premio - $50 en Efectivo</p>
-          <p>SI TÚ GANAS, ELLOS GANAN $50</p>
-          <p><strong>Envía dinero ahora</strong>.</p>
-        </div>
-      </a>
-    </div>
-    <div class="hero-content" data-thumb="/Content/img/homepage-slider/hero-NewYearPromo-spa-2-thumb.jpg">
-      <a href="/en-us/brclub">
-        <picture>
-          <source media="(max-width:570px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-spa-3.png">
-          <source media="(max-width:1140px)" srcset="/Content/img/homepage-slider/hero-NewYearPromo-spa-2.png">
-          <img class="hero-image-cover" src="/Content/img/homepage-slider/hero-NewYearPromo-spa.png" alt="" />
-        </picture>
-        <div class="sr-only">
-          <h2>¡Feliz Año Nuevo!</h2>
-          <p>Recarga el Sábado, 31 de Diciembre y obtén saldo extra para llamar a tu país</p>
-          <p>RECARGA $5 o más - RECIBE 10% extra.</p>
-          <p>SÓLO PARA MIEMBROS DE BR CLUB RECIBE 20% extra.</p>
-          <p><strong>RECARGA AHORA</strong>.</p>
-        </div>
-      </a>
-    </div>
-  </div>
 </div>
 <!--end of zone content-->
 </body>
