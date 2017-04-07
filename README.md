@@ -29,7 +29,7 @@ All part divided by underscore.
 * lg 1710×570px
 * md 1140×570px
 * sm 570×855px
-* th 256×128px
+* thumb 256×128px
 
 
 
