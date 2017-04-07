@@ -26,10 +26,10 @@ All part divided by underscore.
 
 [Image sizes Giude](http://take.ms/CoAom)
 
-lg 1710x570
-md 1140x570
-sm 570x855
-th 256×128
+* lg 1710×570px
+* md 1140×570px
+* sm 570×855px
+* th 256×128px
 
 
 
