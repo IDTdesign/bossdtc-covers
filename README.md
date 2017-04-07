@@ -20,7 +20,7 @@ where:
 * `br-club` — banner name. Any unique short name. No underscores inside this part,
 * `sm` or `md` or `lg` or `thumb` — suffixes for pointing version by size.
 
-All part divided by underscore.
+All parts divided by underscore.
 
 ## Image sizes
 
